@@ -1,0 +1,8 @@
+dim gi
+if [01_GI_R0] < "0,269310" then
+gi = "1"
+elseif ( [01_GI_R0] < "0,388777" and [01_GI_R0] > "0,269309") then
+gi = "2"
+elseif [01_GI_R0] > "0,388776" then
+gi = "3"
+end if

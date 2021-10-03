@@ -1,0 +1,11 @@
+dim b
+if ((([L_average]<7 and [L_average]>3 and [GSI]<0.3 and [GSI]>0.2) or([L_average]<7 and [L_average]>3 and [GSI]>0.3 ))or(([L_average]>7 and  [GSI]>0.3 ))) then 
+b = "High"
+
+elseif ((([L_average]<7 and [L_average]>3 and [GSI]<0.2 and [GSI]>0) or([L_average]>7 and [GSI]>0 and [GSI]<0.2 ))or(([L_average]>7 and  [GSI]<0.3 and [GSI]>0.2 ))) then
+b ="Medium"
+
+elseif ((([L_average]<3 and [GSI]<0.2 and [GSI]>0) or([L_average]<3 and [GSI]>0.2 and [GSI]<0.3 ))or(([L_average]<3 and [GSI]>0.3 ))) then
+b ="Low"
+
+end if

@@ -1,0 +1,8 @@
+dim g
+if [BRUKSAREAL] / [AREAL] > “50” then
+g = “X”
+elseif  [BRUKSAREAL] > “0” then
+g = [BRUKSAREAL] / [AREAL]
+elseif  [AREAL] < “25” then
+g = “X”
+end if

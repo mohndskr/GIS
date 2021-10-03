@@ -1,0 +1,10 @@
+dim a
+if ((( [TYPEKODE] > "200") and ( [TYPEKODE] < "300") and ( [F_BOENHETE] = "0"))
+or (( [TYPEKODE] > "320") and ( [F_BOENHETE] = "0"))) then
+a = [F_ETASJER]
+elseif 
+((( [TYPEKODE] > "200") and ( [TYPEKODE] < "300") and ( [F_BOENHETE] >"0")) or 
+(( [TYPEKODE] > "320") and ( [F_BOENHETE] > "0"))) then
+a = "1"
+else a = "0"
+end if

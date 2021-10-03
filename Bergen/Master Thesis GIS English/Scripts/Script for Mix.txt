@@ -1,0 +1,17 @@
+dim m
+if ((([AhouOnAgg]<20 and [AhouOnAgg]>5)and ( [AamOnAgg]>5)and ([AoffOnAgg]>5)) or
+   (([AamOnAgg]<20)and([AamOnAgg]>5)and([AhouOnAgg]>5)and([AoffOnAgg]>5)) or
+   (([AoffOnAgg]<20)and ([AoffOnAgg]>5) and ([AhouOnAgg]>5) and ([AamOnAgg]>5)))
+    then
+    m = "High"
+
+
+elseif ((([AhouOnAgg]>5) and ([AamOnAgg]>5) and ([AoffOnAgg]<5)) or (([AhouOnAgg]>5)
+          and ([AoffOnAgg]>5) and ([AamOnAgg]<5)) or 
+          (([AamOnAgg]>5) and ([AoffOnAgg]>5) and ([AhouOnAgg]<5))) then
+          m ="Medium"
+
+
+elseif (([AhouOnAgg]>95) or ([AoffOnAgg]>95) or ([AamOnAgg]>95)) then
+          m ="Low"
+end if

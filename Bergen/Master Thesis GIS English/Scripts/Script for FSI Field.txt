@@ -1,0 +1,5 @@
+dim f
+if [BRUKSAREAL] > “0” then
+f = [BRUKSAREAL] / [AREAL]
+else f = “X”
+end if
